@@ -13,12 +13,7 @@ simply.on('singleClick', function(e) {
     var trackTag = "Tags";
 
     if (e.button === "up") {
-        simply.scrollable = function(scrollable){
-            simply.impl.scrollable.apply(this,text);
-        }
-        simply.emitClick = function(long, button){
-            simply.emit(type,button,{button: button,});
-        };
+
         navigator.geolocation.getCurrentPosition(function(pos) {
           var coords = pos.coords;
           var weatherUrl = 'http://api.openweathermap.org/data/2.5/weather?' +
@@ -54,6 +49,9 @@ simply.on('singleClick', function(e) {
           simply.scrollable = function(scrollable){
             simply.impl.scrollable.apply(this,true);
           }
+          simply.emitClick = function(long, button){
+            simply.emit(type,button,{button: button,});
+          };
           
         });
     }
