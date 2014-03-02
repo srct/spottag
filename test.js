@@ -1,4 +1,9 @@
-simply.title("\n         Spot\n         Tag");
+setTimeout(intro, 4000);
+function intro() {
+    simply.title("\n         Spot\n         Tag");
+}
+
+simply.title("\n      Make Tag\n\n      Find Tag");
 
 var savedLat = null;
 var savedLon = null;
