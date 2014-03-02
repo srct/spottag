@@ -13,11 +13,16 @@ simply.on('singleClick', function(e) {
           var coords = pos.coords;
           var weatherUrl = 'http://api.openweathermap.org/data/2.5/weather?' +
            'lat=' + coords.latitude + '&lon=' + coords.longitude + '&units=metric';
+           
+           var sub = data.name + ":\n" + coords.latitude + "\n" + coords.longitude;
+           simply.text({ title: makeTag, subtitle: sub });
+           
+           /*
           ajax({ url: weatherUrl, type: 'json' }, function(data) {
             simply.subtitle(coords.latitude + " " + coords.longitude);
             var sub = data.name + ":\n" + data.main.temp;
             simply.text({ title: makeTag, subtitle: sub });
-          
+          */
           //savedPos = data.main.temp;
           
           });
