@@ -1,7 +1,8 @@
+setTimeout(intro, 4000);
 function intro() {
     simply.title("\n         Spot\n         Tag");
 }
-setTimeout(intro, 4000);
+intro();
 
 simply.title("\n      Make Tag\n\n      Find Tag");
 
