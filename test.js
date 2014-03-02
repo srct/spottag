@@ -27,7 +27,7 @@ simply.on('singleClick', function(e) {
            
           ajax({ url: weatherUrl, type: 'json' }, function(data) {
             savedLat = coords.latitude.toFixed(4);
-            savedLon = Math.floor(coords.longitude * 1000) / 1000;       
+            savedLon = coords.longitude.toFixed(4); 
             var sub = data.name + ":\nLat: " + savedLat + "\nLon: " + savedLon;
             simply.text({ title: makeTag, subtitle: sub });
           
@@ -50,7 +50,7 @@ simply.on('singleClick', function(e) {
            'lat=' + coords.latitude + '&lon=' + coords.longitude + '&units=metric';
           
           ajax({ url: weatherUrl, type: 'json' }, function(data) {
-            var sub = "Last: \n" + savedLat + "\n" + savedLon + "\n" + "Current: \n" + coords.latitude + "\n" + coords.longitude;
+            var sub = "Last: \nLat: " + savedLat + "\nLon: " + savedLon + "\n" + "Current: \nLat: " + coords.latitude.toFixed(4) + "\nLon: " + coords.longitude.toFixed(4);
             simply.text({title: trackTag, subtitle: sub})
           
           });
