@@ -35,7 +35,7 @@ simply.on('singleClick', function(e) {
         });
         simply.vibe('short');
     }
-    text_layer_destroy(text_layer);
+   // text_layer_destroy(text_layer);
     /*
     if (e.button === "down") {
         
