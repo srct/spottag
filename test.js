@@ -5,7 +5,9 @@ function intro() {
 }
 intro();
 
-simply.title("\n      Make Tag\n\n      Find Tag");
+function opts() {
+    simply.title("\n      Make Tag\n\n      Find Tag");
+}
 
 var savedLat = null;
 var savedLon = null;
@@ -58,6 +60,10 @@ simply.on('singleClick', function(e) {
           });
           
         });
+    }
+    
+    if (e.button === "select") {
+        opts();
     }
 
 });
