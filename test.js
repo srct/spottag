@@ -1,9 +1,5 @@
 simply.title("SpotTag!");
 
-void graphics_draw_line(GContext * ctx,
-	GPoint  	p0,
-	GPoint  	p1 
-)
 
 simply.on('singleClick', function(e) {
     
