@@ -22,10 +22,10 @@ simply.on('singleClick', function(e) {
             simply.subtitle(coords.latitude + " " + coords.longitude);
             var sub = data.name + ":\n" + data.main.temp;
             simply.text({ title: makeTag, subtitle: sub });
-          */
+          
           //savedPos = data.main.temp;
           
-          });
+          });*/
           
         });
         simply.vibe('short');
