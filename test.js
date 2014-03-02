@@ -9,6 +9,9 @@ var savedLon = null;
 var savedLat2 = null;
 var savedLon2 = null;
 
+function opts() {
+    simply.title("\n Make Tag\n\n Find Tag");
+}
 
 simply.on('singleClick', function(e) {
     
