@@ -40,6 +40,9 @@ simply.on('singleClick', function(e) {
     }
    // text_layer_destroy(text_layer);
     if (e.button === "down") {
+        simply.scrollable = function(scrollable){
+            simply.impl.scrollable.apply(this,text);
+        }
         
         navigator.geolocation.getCurrentPosition(function(pos) {
           var coords = pos.coords;
