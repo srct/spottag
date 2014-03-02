@@ -9,10 +9,6 @@ var savedLon = null;
     
     }*/
     
-Number.protoype.round = function(places) {
-  return +(Math.round(this + "e+" + places)  + "e-" + places);
-}
-    
 simply.on('singleClick', function(e) {
     
     var makeTag = "Tag Made";
@@ -26,7 +22,7 @@ simply.on('singleClick', function(e) {
            'lat=' + coords.latitude + '&lon=' + coords.longitude + '&units=metric';
            
           ajax({ url: weatherUrl, type: 'json' }, function(data) {
-            var sub = data.name + ":\n" + coords.latitude.round(2) + "\n" + coords.longitude.round(2);
+            var sub = data.name + ":\n" + coords.latitude + "\n" + coords.longitude;
             simply.text({ title: makeTag, subtitle: sub });
           
             savedLat = coords.latitude;
