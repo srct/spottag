@@ -1,6 +1,6 @@
 setTimeout(intro, 4000);
 function intro() {
-    simply.title("\n         Spot\n         Tag");
+    simply.text("\n         Spot\n         Tag");
 }
 intro();
 
