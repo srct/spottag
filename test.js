@@ -1,9 +1,4 @@
-setTimeout(intro, 4000);
-function intro() {
-    var txt = "\n         Spot\n         Tag"
-    simply.text({ title: txt });
-}
-intro();
+simply.title("\n         Spot\n         Tag");
 
 function opts() {
     simply.title("\n      Make Tag\n\n      Find Tag");
