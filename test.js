@@ -3,7 +3,7 @@ simply.title("SpotTag!");
 
 simply.on('singleClick', function(e) {
     
-    var savedPos = 0;
+    var savedPos = parseInt(localStorage.getItem('savedPos')) || 0;
     var n1 = "title";
 
     if (e.button === "up") {
@@ -16,12 +16,10 @@ simply.on('singleClick', function(e) {
             simply.text({ title: data.name, subtitle: data.main.temp });
           
             savedPos = data.main.temp;
+            localStorage.setItem('data.main.temp', savedPos);
             simply.subtitle("savedPos: " + savedPos);
           
           });
-          
-          alert("value of sp now: " + savedPos);
-
         
           
         });
