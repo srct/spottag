@@ -1,12 +1,12 @@
 simply.title("\n        Spot\n        Tag");
 
 var savedPos = 0;
-TextLayer* text_layer_create(GRect frame){
+/*TextLayer* text_layer_create(GRect frame){
     text_layer_set_font(fonts_get_system_font(FONT_KEY_GOTHIC_BOLD_28));
     text_layer_set_text_alignment(GTextAlignmentLeft);
     text_layer_set_overflow_mode(GTextOverflowModeWordWrap);
     
-    }
+    }*/
 simply.on('singleClick', function(e) {
     
     var makeTag = "Tag Made";
