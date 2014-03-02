@@ -5,7 +5,7 @@ var savedPos = 0;
 simply.on('singleClick', function(e) {
     
     var makeTag = "Tag Made";
-    var trackTag = "Tag Tracked";
+    var trackTag = "Tags";
 
     if (e.button === "up") {
         
@@ -14,7 +14,7 @@ simply.on('singleClick', function(e) {
           var weatherUrl = 'http://api.openweathermap.org/data/2.5/weather?' +
            'lat=' + coords.latitude + '&lon=' + coords.longitude + '&units=metric';
           ajax({ url: weatherUrl, type: 'json' }, function(data) {
-            var sub = data.name + ":\n" + data.main.temp + "\nTag Stored";
+            var sub = data.name + ":\n" + data.main.temp;
             simply.text({ title: makeTag, subtitle: sub });
           
           savedPos = data.main.temp;
@@ -31,7 +31,7 @@ simply.on('singleClick', function(e) {
           var weatherUrl = 'http://api.openweathermap.org/data/2.5/weather?' +
            'lat=' + coords.latitude + '&lon=' + coords.longitude + '&units=metric';
           ajax({ url: weatherUrl, type: 'json' }, function(data) {
-            var sub = "Past: \n" + savedPos + "\n" + "Current: \n" + data.main.temp;
+            var sub = "Last: \n" + savedPos + "\n" + "Current: \n" + data.main.temp;
             
             simply.text({title: trackTag, subtitle: sub})
           
