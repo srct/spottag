@@ -1,4 +1,4 @@
-simply.title("\n      Spot\n      Tag");
+simply.title("\n        Spot\n        Tag");
 
 var savedPos = 0;
 
