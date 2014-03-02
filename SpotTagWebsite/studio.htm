@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>SpotTag development</title>
+  <meta name="author" content="guglielmopardo.me">
+  <meta name="description" content="########">
+  <meta name="keywords" content="########" />
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	
+	<box>
+		<div class="row">
+			<div class="large-3 columns">
+				<div class="animated bounceInLeft">
+				<sidebar>
+					<a href="index.htm">
+						<logo>
+							<img src="img/logo.png" alt="logo" />
+						</logo>
+					</a>
+					<intro>
+						Welcome to SpotTag, the interactive Pebble hack GPS tagging and tracking system.
+					<line></line><!-- separation line -->
+					</intro>
+					<nav>
+						<a href="index.htm" id="active">home</a>
+						<a href="about.htm">about</a>
+						<a href="studio.htm">development</a>
+						<a href="shortcode1.htm">team</a>
+					</nav>
+					<line></line><!-- separation line -->
+					<contact>
+						<a href="contact.htm">contact</a>
+					</contact>
+					<line></line><!-- separation line -->
+				</sidebar>
+				</div>
+			</div>
+			<div class="large-9 columns">
+				<div class="animated fadeIn">
+				<about>
+					<h1>development</h1>
+					<p> SpotTag is an ongoing development project ("Pebble Hack") for the Pebble API, compatible on all current Pebble watches.</p>
+					<br />
+					<ul class="small-block-grid-1 large-block-grid-2">
+						<li>
+							<div class="panel radius" style="text-align:center;">
+								<img src="img/design.png" alt="" />
+								<h5>Questions?</h5>
+								<p>Have a question about SpotTag? <a href="contact.htm" >Contact us</a>.<br><br></p>
+							</div>
+						</li>
+						<li>
+							<div class="panel radius" style="text-align:center;">
+								<img src="img/development.png" alt="" />
+								<h5>Latest Development Update</h5>
+								<p>SpotTag Beta v. 1 created and undergoing testing.</p>
+							</div>
+						</li>
+					</ul>
+				</about>
+				</div><!-- animation -->
+				<footer><a href="http://guglielmopardo.me">Designed by GP</a></footer>
+			</div>
+		</div>
+	</box>
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  
+  <script src="js/foundation.min.js"></script>
+  
+  <!--
+  <script src="js/foundation/foundation.js"></script>
+  <script src="js/foundation/foundation.alerts.js"></script>
+  <script src="js/foundation/foundation.clearing.js"></script>
+  <script src="js/foundation/foundation.orbit.js"></script>
+  -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+  <script>
+    window.onload = function() {
+        setTimeout(function(){window.scrollTo(0, 1);}, 1);
+    }
+  </script>
+</body>
+</html>
