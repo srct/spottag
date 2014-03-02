@@ -15,10 +15,12 @@ simply.on('singleClick', function(e) {
           ajax({ url: weatherUrl, type: 'json' }, function(data) {
             simply.text({ title: data.name, subtitle: data.main.temp });
           
-            var savedPos = data.main.temp;
+            savedPos = data.main.temp;
             simply.subtitle("savedPos: " + savedPos);
           
           });
+          
+          alert("value of sp now: " + savedPos);
 
         
           
