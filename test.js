@@ -2,8 +2,12 @@
    HackNC 3-2-14
    Pebble SpotTag Project */
 
-simply.title("\n         Spot\n         Tag");
-
+//simply.title("\n         Spot\n         Tag");
+   simply.title(){
+      pebble.bitmap_layer_create(frame);
+      pebble.bitmap_layer_set(bitmap_layer,spottaglogo.bmp);
+      
+      }
 function opts() {
     simply.title("\n      Make Tag\n\n      Find Tag");
 }
