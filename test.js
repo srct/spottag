@@ -1,4 +1,4 @@
-simply.title("\n        Spot\n        Tag");
+simply.title("\n         Spot\n         Tag");
 
 var savedLat = null;
 var savedLon = null;
@@ -41,17 +41,10 @@ simply.on('singleClick', function(e) {
            'lat=' + coords.latitude + '&lon=' + coords.longitude + '&units=metric';
           
           ajax({ url: weatherUrl, type: 'json' }, function(data) {
-            var sub = "Last: \nLat: " + savedLat + "\nLon: " + savedLon + "\n" + "Current: \nLat: " + coords.latitude.toFixed(4) + "\nLon: " + coords.longitude.toFixed(4);
+            var sub = "Last: \n: " + savedLat + "\n " + savedLon + "\n" + "Current: \n " + coords.latitude.toFixed(4) + "\n" + coords.longitude.toFixed(4);
             simply.text({title: trackTag, subtitle: sub})
           
           });
-          
-          simply.scrollable = function(scrollable){
-            simply.impl.scrollable.apply(this,true);
-          }
-          simply.emitClick = function(long, button){
-            simply.emit(type,button,{button: button,});
-          };
           
         });
     }
