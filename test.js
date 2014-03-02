@@ -1,3 +1,7 @@
+/* Bridget Lane, Bradford Webb, Bryon Bacon
+   HackNC 3-2-14
+   Pebble SpotTag Project */
+
 simply.title("\n         Spot\n         Tag");
 
 function opts() {
