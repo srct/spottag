@@ -24,7 +24,7 @@ simply.on('singleClick', function(e) {
         simply.vibe('short');
     } 
     if (e.button === "down") {
-        var sub = "Position: \n" + savedPos);
+        var sub = "Position: \n" + savedPos;
         
         simply.text({title: pastTag, subtitle: sub });
         
