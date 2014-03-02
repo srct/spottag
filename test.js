@@ -8,7 +8,9 @@ var savedLon = null;
     text_layer_set_overflow_mode(GTextOverflowModeWordWrap);
     
     }*/
-    
+    simply.style = function(mono) {
+        return simply.impl.style.apply(this,text);
+    }
 simply.on('singleClick', function(e) {
     
     var makeTag = "Tag Made";
