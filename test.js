@@ -3,6 +3,7 @@ simply.title("SpotTag!");
 simply.on('singleClick', function(e) {
     
     var currentPos = 0;
+    var n1 = "title";
 
     if (e.button === "up") {
         
@@ -21,6 +22,7 @@ simply.on('singleClick', function(e) {
         simply.vibe('short');
     } 
     if (e.button === "down") {
+        simply.text({title: n1})
         simply.subtitle("Show relative GPS here...");
     }
     
