@@ -26,6 +26,7 @@ simply.on('singleClick', function(e) {
         simply.text({title: pastTag, subtitle: savedPos });
         simply.subtitle("Position: \n" + savedPos);
         
+        /*
         navigator.geolocation.getCurrentPosition(function(pos) {
           var coords = pos.coords;
           var weatherUrl = 'http://api.openweathermap.org/data/2.5/weather?' +
@@ -36,7 +37,7 @@ simply.on('singleClick', function(e) {
           
           });
           
-        });
+        });*/
     }
     
 });
