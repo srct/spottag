@@ -27,7 +27,7 @@ simply.on('singleClick', function(e) {
             var sub = data.name + ":\n" + data.main.temp;
             simply.text({ title: makeTag, subtitle: sub });*/
           
-          //savedPos = data.main.temp;
+          //savedPos = data.main.temp; //
           
           });
           
