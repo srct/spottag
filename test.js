@@ -14,16 +14,19 @@ simply.on('singleClick', function(e) {
            'lat=' + coords.latitude + '&lon=' + coords.longitude + '&units=metric';
           ajax({ url: weatherUrl, type: 'json' }, function(data) {
             simply.text({ title: data.name, subtitle: data.main.temp });
-          });
-        
+          
           savedPos = data.main.temp;
           simply.subtitle("savedPos: " + savedPos);
+          simply.subtitle("coords: " + coords);
+          
+          });
           
         });
         simply.vibe('short');
     } 
     if (e.button === "down") {
         simply.text({title: n1, subtitle: savedPos });
+        simply.subtitle("savedPos: " + savedPos)
     }
     
 });
