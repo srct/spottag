@@ -26,7 +26,7 @@ simply.on('singleClick', function(e) {
           ajax({ url: weatherUrl, type: 'json' }, function(data) {
             savedLat = Math.floor(coords.latitude * 100) / 100;
             savedLon = Math.floor(coords.longitude * 100) / 100;       
-            var sub = data.name + ":\n" + savedLat + "\n" + savedLon;
+            var sub = data.name + ":\nLat: " + savedLat + ", Lon " + savedLon;
             simply.text({ title: makeTag, subtitle: sub });
           
 
