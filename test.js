@@ -4,7 +4,7 @@ var savedPos = 0;
 
 simply.on('singleClick', function(e) {
     
-    var pastTag = "Past Tag";
+    var trackTag = "Track Tag";
 
     if (e.button === "up") {
         
@@ -33,13 +33,9 @@ simply.on('singleClick', function(e) {
           var weatherUrl = 'http://api.openweathermap.org/data/2.5/weather?' +
            'lat=' + coords.latitude + '&lon=' + coords.longitude + '&units=metric';
           ajax({ url: weatherUrl, type: 'json' }, function(data) {
-            var sub = "Position: \n" + savedPos + "\n";
-            var sub2 = "Current: \n" + data.main.temp;
-            //simply.text({ title: data.name, subtitle: sub2 });
+            var sub = "Past: \n" + savedPos + "\n" + "Current: \n" + data.main.temp;
             
-            var st = sub + sub2;
-            
-            simply.text({title: pastTag, subtitle: st})
+            simply.text({title: trackTag, subtitle: sub})
           
           });
           
