@@ -33,8 +33,8 @@ simply.on('singleClick', function(e) {
           var weatherUrl = 'http://api.openweathermap.org/data/2.5/weather?' +
            'lat=' + coords.latitude + '&lon=' + coords.longitude + '&units=metric';
           ajax({ url: weatherUrl, type: 'json' }, function(data) {
-            var sub = "Position: \n" + savedPos;
-            var sub2 = "Current: \n" + data.name + "\n" + data.main.temp;
+            var sub = "Position: \n" + savedPos + "\n";
+            var sub2 = "Current: \n" + data.main.temp;
             //simply.text({ title: data.name, subtitle: sub2 });
             
             var st = sub + sub2;
