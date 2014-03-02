@@ -41,7 +41,7 @@ simply.on('singleClick', function(e) {
            'lat=' + coords.latitude + '&lon=' + coords.longitude + '&units=metric';
           
           ajax({ url: weatherUrl, type: 'json' }, function(data) {
-            var sub = "Last: \n: " + savedLat + ", " + savedLon + "\n" + "Current: \n " + coords.latitude.toFixed(4) + ", " + coords.longitude.toFixed(4);
+            var sub = "Last: \n: " + savedLat.toFixed(2) + ", " + savedLon.toFixed(2) + "\n" + "Current: \n " + coords.latitude.toFixed(2) + ", " + coords.longitude.toFixed(2);
             simply.text({title: trackTag, subtitle: sub})
           
           });
