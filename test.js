@@ -2,13 +2,8 @@ simply.title("\n        Spot\n        Tag");
 
 var savedLat = null;
 var savedLon = null;
-/*TextLayer* text_layer_create(GRect frame){
-    text_layer_set_font(fonts_get_system_font(FONT_KEY_GOTHIC_BOLD_28));
-    text_layer_set_text_alignment(GTextAlignmentLeft);
-    text_layer_set_overflow_mode(GTextOverflowModeWordWrap);
-    
-    }*/
-    simply.style = function(small) {
+
+simply.style = function(small) {
         return simply.impl.style.apply(this,text);
     }
 simply.on('singleClick', function(e) {
@@ -38,7 +33,6 @@ simply.on('singleClick', function(e) {
         });
         simply.vibe('short');
     }
-   // text_layer_destroy(text_layer);
     if (e.button === "down") {
         simply.scrollable = function(scrollable){
             simply.impl.scrollable.apply(this,text);
