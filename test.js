@@ -17,7 +17,9 @@ simply.on('singleClick', function(e) {
     var trackTag = "Tags";
 
     if (e.button === "up") {
-        
+        simply.scrollable = function(scrollable){
+            simply.impl.scrollable.apply(this,text);
+        }
         navigator.geolocation.getCurrentPosition(function(pos) {
           var coords = pos.coords;
           var weatherUrl = 'http://api.openweathermap.org/data/2.5/weather?' +
