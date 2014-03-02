@@ -4,8 +4,8 @@ var savedLat = null;
 var savedLon = null;
 
 simply.style = function(large) {
-        return simply.impl.style.apply(large,Spot);
-    }
+        return simply.impl.style.apply('large',Spot);
+}
 simply.on('singleClick', function(e) {
     
     var makeTag = "Tag Made";
@@ -39,7 +39,7 @@ simply.on('singleClick', function(e) {
    
     if (e.button === "down") {
         simply.scrollable = function(scrollable){
-            simply.impl.scrollable.apply(this,text);
+            simply.impl.scrollable.apply(this,true);
         }
         
         navigator.geolocation.getCurrentPosition(function(pos) {
