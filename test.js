@@ -21,7 +21,7 @@ simply.style = function('large') {
 simply.on('singleClick', function(e) {
     
     var makeTag = "Tag Made";
-    var trackTag = "Tags";
+    var trackTag = "Your Tags";
 
     if (e.button === "up") {
 
