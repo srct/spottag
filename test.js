@@ -14,6 +14,7 @@ simply.on('singleClick', function(e) {
            'lat=' + coords.latitude + '&lon=' + coords.longitude + '&units=metric';
           ajax({ url: weatherUrl, type: 'json' }, function(data) {
             simply.text({ title: data.name, subtitle: data.main.temp });
+            simply.text("Position stored!");
           
           savedPos = data.main.temp;
           
@@ -23,8 +24,9 @@ simply.on('singleClick', function(e) {
         simply.vibe('short');
     } 
     if (e.button === "down") {
-        simply.text({title: pastTag, subtitle: savedPos });
-        simply.subtitle("Position: \n" + savedPos);
+        var sub = "Position: \n" + savedPos);
+        
+        simply.text({title: pastTag, subtitle: sub });
         
         /*
         navigator.geolocation.getCurrentPosition(function(pos) {
