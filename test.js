@@ -22,12 +22,12 @@ simply.on('singleClick', function(e) {
            'lat=' + coords.latitude + '&lon=' + coords.longitude + '&units=metric';
            
           ajax({ url: weatherUrl, type: 'json' }, function(data) {
-            var savedLat = coords.latitude
-            var savedLon = coords.longitude           
-            var sub = data.name + ":\n" + savedLat + "\n" + savedLong;
+                     
+            var sub = data.name + ":\n" + coords.latitude + "\n" + coords.longitude;
             simply.text({ title: makeTag, subtitle: sub });
           
-
+            var savedLat = coords.latitude
+            var savedLon = coords.longitude
           
           });
           
