@@ -1,4 +1,4 @@
-fullscreen(True)
+fullscreen(fullscreen)
 simply.title("\n        Spot\n        Tag");
 
 var savedLat = null;
