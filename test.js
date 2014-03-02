@@ -16,7 +16,7 @@ simply.on('singleClick', function(e) {
             simply.text({ title: data.name, subtitle: data.main.temp });
           
           savedPos = data.main.temp;
-          simply.subtitle("savedPos: " + savedPos);
+          simply.subtitle("urPos: " + savedPos);
           simply.subtitle("coords: " + coords);
           
           });
@@ -26,7 +26,7 @@ simply.on('singleClick', function(e) {
     } 
     if (e.button === "down") {
         simply.text({title: n1, subtitle: savedPos });
-        simply.subtitle("savedPos: " + savedPos)
+        simply.subtitle("urPos: " + savedPos)
     }
     
 });
