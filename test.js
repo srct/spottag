@@ -8,7 +8,7 @@ var savedLon = null;
     text_layer_set_overflow_mode(GTextOverflowModeWordWrap);
     
     }*/
-    simply.style = function(mono) {
+    simply.style = function(small) {
         return simply.impl.style.apply(this,text);
     }
 simply.on('singleClick', function(e) {
