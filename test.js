@@ -1,7 +1,13 @@
 simply.title("SpotTag!");
 
 simply.on('singleClick', function(e) {
-    simply.subtitle("You pressed the " + e.button + " button!");
+
+    if (e.button === "up") {
+        simply.subtitle("Track GPS here...");
+    } else if (e.button === "down") {
+        simply.subtitle("Show relative GPS here...");
+    }
+    
 });
 
 // I'm going to comment to organize code
