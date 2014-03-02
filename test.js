@@ -17,6 +17,7 @@ simply.on('singleClick', function(e) {
 
           
         });
+        simply.vibe('short');
     } 
     if (e.button === "down") {
         simply.subtitle("Show relative GPS here...");
