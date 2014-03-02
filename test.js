@@ -21,7 +21,7 @@ simply.on('singleClick', function(e) {
         simply.vibe('short');
     } 
     if (e.button === "down") {
-        simply.text({title: n1, subtitle: savedPos;});
+        simply.text({title: n1, subtitle: savedPos });
     }
     
 });
