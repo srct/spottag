@@ -33,7 +33,10 @@ simply.on('singleClick', function(e) {
           ajax({ url: weatherUrl, type: 'json' }, function(data) {
             simply.subtitle("Current Position: \n");
             simply.text({ title: data.name, subtitle: data.main.temp });
+          
           });
+          
+        });
     }
     
 });
