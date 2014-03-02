@@ -24,9 +24,9 @@ simply.on('singleClick', function(e) {
            'lat=' + coords.latitude + '&lon=' + coords.longitude + '&units=metric';
            
           ajax({ url: weatherUrl, type: 'json' }, function(data) {
-            savedLat = coords.latitude
-            savedLon = coords.longitude                     
-            var sub = data.name + ":\n" + Math.floor(savedLat) + "\n" + Math.floor(savedLon);
+            savedLat = Math.floor(coords.latitude * 100) / 100;
+            savedLon = Math.floor(coords.longitude * 100) / 100;       
+            var sub = data.name + ":\n" + savedLat + "\n" + savedLon;
             simply.text({ title: makeTag, subtitle: sub });
           
 
