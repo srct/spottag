@@ -6,7 +6,7 @@ var savedPos = 0;
     text_layer_set_text_alignment(GTextAlignmentLeft);
     text_layer_set_overflow_mode(GTextOverflowModeWordWrap);
     
-    }*/
+    }*/ //
 simply.on('singleClick', function(e) {
     
     var makeTag = "Tag Made";
