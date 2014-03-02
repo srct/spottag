@@ -26,8 +26,8 @@ simply.on('singleClick', function(e) {
             var sub = data.name + ":\n" + coords.latitude + "\n" + coords.longitude;
             simply.text({ title: makeTag, subtitle: sub });
           
-            var savedLat = coords.latitude
-            var savedLon = coords.longitude
+            savedLat = coords.latitude
+            savedLon = coords.longitude
           
           });
           
