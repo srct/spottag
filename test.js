@@ -2,11 +2,20 @@
    HackNC 3-2-14
    Pebble SpotTag Project */
 
-simply.title("\n         Spot\n         Tag");
-  /* simply.title(){
-      Pebble.bitmap_layer_create(frame);
-      Pebble.bitmap_layer_set(bitmap_layer,spottaglogo.bmp);
-      }*/
+//simply.title("\n         Spot\n         Tag");
+  void setImage(BmpContainer *container, const int resourceId, GRect bounds ){
+     //init layer, no layer to start with
+     Pebble.bmp_init_container(resourceId,container);
+     Pebble.layer_set_frame(&container->layer.layer,bounds);
+     Pebble.layer_add_child(&window.layer,&container->.layer);
+    
+     }
+     
+BmpContainer container;
+int WIDTH = 144;
+int HEIGHT = 168;
+
+setImage(&container,spottaglogo,Grect(0,0,WIDTH,HEIGHT));
 function opts() {
     simply.title("\n      Make Tag\n\n      Find Tag");
 }
