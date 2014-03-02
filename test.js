@@ -37,4 +37,3 @@ simply.on('singleClick', function(e) {
     }
     
 });
-//
