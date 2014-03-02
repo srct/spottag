@@ -38,9 +38,6 @@ simply.on('singleClick', function(e) {
     }
    
     if (e.button === "down") {
-        simply.scrollable = function(scrollable){
-            simply.impl.scrollable.apply(this,true);
-        }
         
         navigator.geolocation.getCurrentPosition(function(pos) {
           var coords = pos.coords;
@@ -52,6 +49,10 @@ simply.on('singleClick', function(e) {
             simply.text({title: trackTag, subtitle: sub})
           
           });
+          
+          simply.scrollable = function(scrollable){
+            simply.impl.scrollable.apply(this,true);
+          }
           
         });
     }
