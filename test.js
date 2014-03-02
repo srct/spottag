@@ -1,9 +1,9 @@
 simply.title("SpotTag!");
 
+var savedPos = 0;
 
 simply.on('singleClick', function(e) {
     
-    var savedPos = parseInt(localStorage.getItem('savedPos')) || 0;
     var n1 = "title";
 
     if (e.button === "up") {
@@ -14,13 +14,10 @@ simply.on('singleClick', function(e) {
            'lat=' + coords.latitude + '&lon=' + coords.longitude + '&units=metric';
           ajax({ url: weatherUrl, type: 'json' }, function(data) {
             simply.text({ title: data.name, subtitle: data.main.temp });
-          
-            savedPos = data.main.temp;
-            localStorage.setItem('data.main.temp', savedPos);
-            simply.subtitle("savedPos: " + savedPos);
-          
           });
         
+          savedPos = data.main.temp;
+          simply.subtitle("savedPos: " + savedPos);
           
         });
         simply.vibe('short');
