@@ -2,10 +2,11 @@ simply.title("\n        Spot\n        Tag");
 
 var savedLat = null;
 var savedLon = null;
-
+/*
 simply.style = function('large') {
         return simply.impl.style.apply(this,text);
-}
+}*/
+
 simply.on('singleClick', function(e) {
     
     var makeTag = "Tag Made";
