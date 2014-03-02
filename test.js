@@ -4,7 +4,8 @@ simply.on('singleClick', function(e) {
 
     if (e.button === "up") {
         simply.subtitle("Track GPS here...");
-    } else if (e.button === "down") {
+    } 
+    if (e.button === "down") {
         simply.subtitle("Show relative GPS here...");
     }
     
