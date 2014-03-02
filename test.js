@@ -29,7 +29,7 @@ simply.on('singleClick', function(e) {
           
           //savedPos = data.main.temp;
           
-          });*/
+          });
           
         });
         simply.vibe('short');
