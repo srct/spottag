@@ -4,10 +4,9 @@
 
 //simply.title("\n         Spot\n         Tag");
    simply.title(){
-      pebble.bitmap_layer_create(frame);
-      pebble.bitmap_layer_set(bitmap_layer,spottaglogo.bmp);
-      
-      }
+      Pebble.bitmap_layer_create(frame);
+      Pebble.bitmap_layer_set(bitmap_layer,spottaglogo.bmp);
+      };
 function opts() {
     simply.title("\n      Make Tag\n\n      Find Tag");
 }
