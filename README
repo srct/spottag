@@ -1,0 +1,32 @@
+SpotTag Beta (http://spottag.hackmason.org/index.htm) Release 1.0.0 for Pebble
+(https://getpebble.com/)
+
+The SpotTag application for Pebble technology allows the user to find certain
+tags again using their phone's geolocation technology via bluetooth. The user
+tags a starting position, and when they're ready to return, they can hop on to
+SpotTag to see their current location relevant to their last tagged location. 
+
+Latest Version
+--------------
+Information of the latest release can be found at
+http://spottag.hackmason.org/studio.htm
+
+Documentation
+-------------
+This documentation is current with the release listed on ln.1 of this document
+and currently only available via this GitHub repository.
+
+Installation
+------------
+Currently specialized developer installation is available. For more 
+information, contact myspottag@gmail.com
+
+Liscensing
+----------
+Please see the file entitled LISCENSE
+
+Software and Hardware Notice
+----------------------------
+This app is currently only made for the Pebble watch to run with the Pebble API 
+and has not been officially released in the Pebble appstore. More information 
+about Pebble can be found at https://getpebble.com/
